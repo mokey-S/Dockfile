@@ -14,6 +14,8 @@ spec:
       containers:
         - name: nginx-web
           image: <IMAGE_TAG>
+          imagePullSecrets:
+            - name: registry-secret
           imagePullPolicy: Always
           ports:
             - containerPort: 80
