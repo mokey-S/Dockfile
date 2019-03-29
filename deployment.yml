@@ -12,7 +12,7 @@ spec:
         name: nginx-web
     spec:
       imagePullSecrets:
-        - name: registry-secret
+      - name: registry-secret
       containers:
         - name: nginx-web
           image: <IMAGE_TAG>
