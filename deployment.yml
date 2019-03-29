@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: nginx-web
-          image: 172.17.0.16:5000/mk/test:latest
+          image: <IMAGE_TAG>
           imagePullPolicy: Always
           ports:
             - containerPort: 80
